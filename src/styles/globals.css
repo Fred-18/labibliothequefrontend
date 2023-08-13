@@ -25,3 +25,7 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.myInput {
+  @apply p-3 rounded text-blue-500;
+}
