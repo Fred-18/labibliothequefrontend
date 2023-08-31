@@ -27,9 +27,9 @@ body {
 }
 
 .myInput {
-  @apply p-3 rounded text-black;
+  @apply p-3 rounded text-black flex gap-6 text-center;
 }
 
 .myButton {
-  @apply bg-white p-3 rounded text-blue-500;
+  @apply p-3 bg-red-700 rounded text-blue-500 text-center self-center;
 }

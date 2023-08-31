@@ -40,7 +40,10 @@ const LoginPage = () => {
         alt="bg"
       />
       <h1 className="text-4xl text-white font-bold underline">Login</h1>
-      <form onSubmit={handleSubmit}>
+      <form
+        onSubmit={handleSubmit}
+        className=" p-20 rounded  flex flex-col gap-6 bg-slate-800"
+      >
         {" "}
         {/* Ajout du formulaire avec gestionnaire de soumission */}
         <input
@@ -59,10 +62,9 @@ const LoginPage = () => {
           onChange={(e) => setPassword(e.target.value)}
           required
         />
-        <button className="myButton flex" type="submit" onSubmit={handleSubmit}>
+        <button className="myButton" type="submit" onSubmit={handleSubmit}>
           Envoyer
         </button>
-        {/* Bouton de soumission */}
       </form>
     </main>
   );
