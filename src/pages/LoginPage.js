@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import bglogin from "../../public/bglogin.jpg";
 import Image from "next/image";
 import axios from "axios";
+import { Navbar } from "@/components/Navbar";
+import { Header } from "@/components/Header";
 
 const LoginPage = () => {
   const [email, setEmail] = useState("");
@@ -34,12 +36,15 @@ const LoginPage = () => {
 
   return (
     <main className="h-screen flex items-center justify-center flex-col gap-6">
+      <Header />
       <Image
         className="h-full absolute z-[-1] blur-sm brightness-50 "
         src={bglogin}
         alt="bg"
       />
-      <h1 className="text-4xl text-white font-bold underline">Login</h1>
+      <h1 className="text-4xl text-white font-bold font-poppins underline">
+        Login
+      </h1>
       <form
         onSubmit={handleSubmit}
         className=" p-20 rounded  flex flex-col gap-6 bg-slate-800"
